@@ -1,7 +1,7 @@
 # aci-fabric-example
 Example configuration for the terraform-aci-fabric-object module.
 
-* This example uses Terraform Cloud.  For local use, remove the Backend block in the main.tf file.  Also, the ACI credentials (username, password and URL) will need to be supplied, as well the as `fabric` object
+**This example uses Terraform Cloud.  For local use, remove the Backend block in the main.tf file.  Also, the ACI credentials (username, password and URL) will need to be supplied, as well the as `fabric` object**
 
 This repository is used to manage configuration within the "Fabric" tab of the APIC GUI.  This includes:
 - Inventory
