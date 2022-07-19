@@ -1,2 +1,68 @@
 # aci-fabric-example
-Example configuration for the terraform-aci-fabric-object module
+Example configuration for the terraform-aci-fabric-object module.
+
+* This example uses Terraform Cloud.  For local use, remove the Backend block in the main.tf file.  Also, the ACI credentials (username, password and URL) will need to be supplied, as well the as `fabric` object
+
+This repository is used to manage configuration within the "Fabric" tab of the APIC GUI.  This includes:
+- Inventory
+  - Pod
+    - Fabric Membership
+    - Leaf
+      - Interface Blacklist
+- Fabric Policies
+  - Interface
+    - Layer 3 Interface Policies
+  - Monitoring
+    - Fabric Node Control Policies
+- Access Policies
+  - Domains
+    - Physical Domains
+    - Layer 3 Domains
+    - Fibre Channel Domains
+  - Interfaces
+    - Leaf
+      - Policy Groups
+        - Leaf Access Bundles (PC/vPC Interfaces)
+        - Leaf Access Ports (Eth Interfaces)
+        - Leaf Breakout Ports
+      - Profiles
+        - FEX Profiles
+        - Leaf Interface Profiles
+    - Spine
+      - Policy Groups
+        - Spine Ports
+      - Profiles
+        - Spine Interface Profiles
+  - Policies
+    - Global
+      - Attached Access Entity Profiles (AAEP)
+      - Error Disable Recovery Policy
+      - MCP Instance Policy
+      - QoS Class Policy
+    - Interface
+      - CDP Interface Policies
+      - Fibre Channel Interface Policies
+      - Layer 2 Interface Policies
+      - Link Level Interface Policies
+      - LLDP Interface Policies
+      - MCP Interface Policies
+      - Port Channel (LACP) Policies
+      - Port Security Policies
+      - Spanning Tree Interface Policies
+    - Switch
+      - VPC Domain Policies
+      - VPC Explicit Protection Groups
+  - Pools
+    - VLAN Pools
+    - VSAN Pools
+  - Switches
+    - Leaf
+      - Policy Groups
+        - Access Switch
+      - Profiles
+        - Leaf Profiles
+    - Spine
+      - Policy Groups
+        - Spine Switch
+      - Profiles
+        - Spine Profiles
